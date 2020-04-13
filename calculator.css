@@ -1,0 +1,18 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    color: #34496E;
+    padding: 20px 400px;
+}
+
+.img {
+       height: 100px;
+       width: 100px;
+       background-size: 100px 90px;
+    
+}
+
