@@ -3,7 +3,7 @@
 <html lang="en">
     
     <head>
-            <meta charset="iso-8859-1">
+            <meta charset="utf-8">
             <link rel="stylesheet" type="text/css" href="CSS/calculator.css">
           
      <title>Calculator</title>    
@@ -12,54 +12,72 @@
     
     
     <body>
-         
-        <center><h4 class="cal">CASIO  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>[ MJ-120T ]</em></h4></center>
+         <div class="formstyle">
+         <form name="coc" >
+             
+        <center><h4 class="cal">CASIO  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>[ MJ-120T ]</em></h4></center>
         
+             
         <center> 
             <tr> 
                 <td><input type ="text" id="display" readonly="readonly"></td> 
             </tr>
             
-            <table border="0px" width="100px" cellspacing="15px"  align="center"> 
+            <table border="10px" width="100px" cellspacing="15px" align="center" > 
         
             <tr>
-                <td><input type="button" value="C" id="clear"></td>
-                <td><input type="button" value="DEL" id="bt" style="font-size: 18px"></td>
-                <td><input type="button" value="%" id="bt"></td>
-                <td><input type="button" value="/" id="bt"></td>
+                <td><input type="button" value="AC" onclick="coc.display.value+=" id="clear"></td>
+                
+                <td><input type="button" value="DEL" onclick="coc.display.value+=" id="clear" style="font-size: 18px"></td>
+                
+                <td><input type="button" value="%" onclick="calculate.display.value=" id="bq"></td>
+                
+                <td><input type="button" value="/" onclick="coc.display.value+=/" id="bq"></td>
                 
             </tr>
              
              <tr>
-                <td><input type="button" value="7" id="bt"></td>
-                <td><input type="button" value="8" id="bt"></td>
-                <td><input type="button" value="9" id="bt"></td>
-                <td><input type="button" value="X" id="bt"></td>
+                <td><input type="button"  value="7" onclick="coc.display.value+=7" id="bt"></td>
+                 
+                <td><input type="button" value="8" onclick="coc.display.value+=8" id="bs"></td>
+                 
+                <td><input type="button" value="9" onclick="coc.display.value+=9" id="bp"></td>
+                 
+                <td><input type="button" value="X" onclick="coc.display.value+=X" id="bq"></td>
             </tr>
              
              <tr>
-                <td><input type="button" value="4" id="bt"></td>
-                <td><input type="button" value="5" id="bt"></td>
-                <td><input type="button" value="6" id="bt"></td>
-                <td><input type="button" value="-" id="bt"></td>
+                <td><input type="button" value="4" onclick="coc.display.value+=4" id="bt"></td>
+                 
+                <td><input type="button" value="5" onclick="coc.display.value+=5" id="bs"></td>
+                 
+                <td><input type="button" value="6" onclick="coc.display.value+=6" id="bp"></td>
+                 
+                <td><input type="button" value="-" onclick="coc.display.value+=-" id="bq"></td>
                  
             </tr>
              
              <tr>
-                <td><input type="button" value="1" id="bt"></td>
-                <td><input type="button" value="2" id="bt"></td>
-                <td><input type="button" value="3" id="bt"></td>
-                <td rowspan="2"><input type="button" value="+" id="plus" style="height: 99px"></td>
+                <td><input type="button" value="1" onclick="coc.display.value+=1" id="bt"></td>
+                 
+                <td><input type="button" value="2" onclick="coc.display.value+=2" id="bs"></td>
+                 
+                <td><input type="button" value="3" onclick="coc.display.value+=3" id="bp"></td>
+                 
+                <td rowspan="2"><input type="button" value="+" onclick="coc.display.value+=+" id="plus" style="height: 96px"></td>
             </tr>
              
              <tr>
-                <td><input type="button" value="." id="bt"></td>
-                <td><input type="button" value="0" id="bt"></td>
-                <td><input type="button" value="=" id="bt"></td>
+                <td><input type="button" value="." onclick="coc.display.value+=." id="bt"></td>
+                 
+                <td><input type="button" value="0" onclick="coc.display.value+=0" id="bs"></td>
+                 
+                <td><input type="button" value="=" onclick="coc.display.value+=" id="bp"></td>
             </tr>
           </table>
             </center> 
-    
+    </form>
+             </div>
     </body>
 
 </html>
